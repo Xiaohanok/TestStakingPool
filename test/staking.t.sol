@@ -66,7 +66,7 @@ contract StakingTest is Test {
         uint256 expectedReward = staking.earned(user1);
         vm.stopPrank();
 
-        assertGt(expectedReward, 0, "Earned reward should be greater than zero");
+        assertEq(expectedReward, 50 ether, "Earned reward should be eq");
     }
 
     receive() external payable {}
