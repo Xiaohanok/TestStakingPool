@@ -56,7 +56,7 @@ contract StakingTest is Test {
        
 
         uint256 reward = token.balanceOf(user2);
-        assertEq(reward, 125000000000000000000, "Claimed reward should be greater than zero");
+        assertEq(reward, 125000000000000000000, "Claimed reward should be eq");
     }
 
     function testEarnedCalculation() public {
